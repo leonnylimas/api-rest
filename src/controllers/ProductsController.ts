@@ -1,4 +1,5 @@
 import { Request, Response } from "express"
+import { AppError } from "../utils/AppError"
 
 
 class ProductsController{
@@ -10,6 +11,10 @@ class ProductsController{
 
     create(request: Request, response: Response){
         const { name, price } = request.body
+
+        throw new AppError("Erro ao tentar criar um produto!")
+
+      //  throw new Error("ERRO DE EXEMPLO!")
 
     //response.send(`O produto ${name} custa ${price}`)
 
