@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* Configurações Essenciais de Módulos e Target */
+    "target": "ES2022",                  // Para usar recursos modernos do Node v20
+    "module": "Node16",                     // Para usar a sintaxe 'import/export'
+    "moduleResolution": "Node16",           // Importante para a resolução correta de caminhos
+    "esModuleInterop": true,              // Melhora a compatibilidade com pacotes CommonJS
+    "forceConsistentCasingInFileNames": true, 
+
+    /* Pastas de Projeto */
+    "rootDir": "./src",                   // Onde o TypeScript procura os arquivos .ts
+    "outDir": "./dist",                   // Onde o código JavaScript compilado será salvo
+
+    /* Checagem de Tipos (Mantenha o Rigor) */
+    "strict": true,                       // Ativa as regras rigorosas de checagem de tipos
+    "skipLibCheck": true,                 // Ignora a checagem de tipos de bibliotecas (mais rápido)
+    
+    // Opcional, mas útil:
+    "lib": ["ES2023"] // Define quais bibliotecas de tipos o TS deve incluir (ES2023 é bom para Node v20)
+  }
+}

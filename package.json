@@ -1,0 +1,21 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "Criando API REST com Node.js",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "author": "Leone Lima",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.4",
+    "@types/node": "^24.9.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
