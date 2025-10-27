@@ -8,7 +8,7 @@
   },
   "author": "Leone Lima",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@types/express": "^5.0.4",
     "@types/node": "^24.9.1",
