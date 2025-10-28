@@ -1,21 +1,13 @@
 import { Router } from "express"
+import { ProductsController } from "../controllers/ProductsController"
 import { myMiddleware } from "../middlewares/my-middleware"
 
 const productsRoutes = Router()
+const productsController = new ProductsController()
 
-productsRoutes.get("/", (request, response)=> {
+productsRoutes.get("/", productsController.index)
 
-})
-
-productsRoutes.post("/", myMiddleware, (request, response)=> {
-    const { name, price } = request.body
-
-    return response.json({
-        name,
-        price,
-        user_id: request.user_id
-    })
-})
+productsRoutes.post("/", myMiddleware, productsController.create)
 
 export { productsRoutes }
 
